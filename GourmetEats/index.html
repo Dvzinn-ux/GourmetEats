@@ -4,193 +4,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Encontre receitas para o dia a dia e ocasiões especiais no GourmetEats.">
-  <title>GourmetEats | Receitas para todos os momentos</title>
+  <meta name="description" content="Receitas caseiras com ingredientes fáceis de achar e passo a passo direto.">
+  <title>GourmetEats | Receitas caseiras</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html"><span class="logo-mark">✦</span>Gourmet<span>Eats</span></a>
-      <nav class="main-nav"><a class="active" href="index.html">Início</a><a href="#categorias">Categorias</a><a
-          href="#receitas">Receitas</a><a href="eventos.html">Eventos</a><a class="nav-cta"
-          href="#receitas">Explorar</a></nav>
+  <input type="checkbox" id="menu" class="menu-check" aria-label="Abrir menu">
+  <label for="menu" class="overlay"></label>
+  <aside class="drawer" aria-label="Menu">
+    <div class="drawer-top"><a class="logo" href="index.html">Gourmet<b>Eats</b></a><label for="menu" class="menu-close"
+        aria-label="Fechar menu">&times;</label></div>
+    <a class="l" href="index.html">Início</a>
+    <a class="l" href="receitas.html">Todas as receitas</a>
+    <h4>Categorias</h4><a class="l" href="categorias/doces.html">Doces e sobremesas</a><a class="l"
+      href="categorias/salgados.html">Salgados</a><a class="l" href="categorias/rapidas.html">Receitas rápidas</a><a
+      class="l" href="categorias/vegetarianas.html">Vegetarianas</a><a class="l"
+      href="categorias/acompanhamentos.html">Acompanhamentos</a>
+    <h4>Ocasiões</h4><a class="l" href="eventos.html#aniversario">Aniversários</a><a class="l"
+      href="eventos.html#natal">Natal e fim de ano</a><a class="l" href="eventos.html#encontros">Almoços e encontros em
+      família</a>
+    <h4>O site</h4><a class="l" href="sobre.html">Sobre o GourmetEats</a>
+  </aside>
+  <header>
+    <div class="topbar">
+      <div class="wrap">
+        <label for="menu" class="menu-btn">&#9776; Menu</label><a class="logo" href="index.html">Gourmet<b>Eats</b></a>
+        <a class="toplink" href="receitas.html">Todas as receitas</a>
+      </div>
     </div>
+    <nav class="catbar">
+      <div class="wrap"><a href="categorias/doces.html">Doces e sobremesas</a><a
+          href="categorias/salgados.html">Salgados</a><a href="categorias/rapidas.html">Receitas rápidas</a><a
+          href="categorias/vegetarianas.html">Vegetarianas</a><a
+          href="categorias/acompanhamentos.html">Acompanhamentos</a><a href="eventos.html">Eventos e festas</a></div>
+    </nav>
   </header>
   <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <div class="eyebrow">Inspire-se • Prepare • Compartilhe</div>
-          <h1>Todo momento merece uma <span>boa receita.</span></h1>
-          <p class="hero-copy">Do almoço rápido à ceia de Natal, encontre ideias, ingredientes e instruções organizadas
-            para cozinhar com mais praticidade e criatividade.</p>
-          <a class="button" href="#receitas">Descobrir receitas</a>
-          <a class="button button-outline" href="eventos.html" style="margin-left:8px">Planejar uma comemoração</a>
+    <div class="wrap">
+      <section class="destaque"><a class="thumb" href="receitas/lasanha.html"><img
+            src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=900" alt="Lasanha à bolonhesa"></a>
+        <div><span class="rotulo">Receita em destaque</span>
+          <h1>Lasanha à bolonhesa</h1>
+          <p class="sub">Uma receita clássica para reunir a família em volta da mesa.</p>
+          <p class="meta"><span>45 min</span><span>6 porções</span><span>Média</span></p><a class="btn"
+            href="receitas/lasanha.html">Ver receita</a>
         </div>
-        <div class="hero-image"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=1200"
-            alt="Mesa com pratos variados e coloridos">
-          <div class="image-note">Receitas para compartilhar<span>Inspiração para todos os dias</span></div>
-        </div>
+      </section>
+      <h2 class="sec">Receitas novas</h2>
+      <div class="grid"><a class="card" href="receitas/bolo-de-cenoura.html"><span class="thumb"><img loading="lazy"
+              src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600"
+              alt="Bolo de cenoura com cobertura de chocolate"></span><span class="cat">Doces e sobremesas</span>
+          <h3>Bolo de cenoura com cobertura de chocolate</h3><span class="meta"><span>1h</span><span>12
+              porções</span></span>
+        </a><a class="card" href="receitas/salpicao.html"><span class="thumb"><img loading="lazy"
+              src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600"
+              alt="Salpicão de frango"></span><span class="cat">Salgados</span>
+          <h3>Salpicão de frango</h3><span class="meta"><span>30 min</span><span>8 porções</span></span>
+        </a><a class="card" href="receitas/pao-de-queijo.html"><span class="thumb"><img loading="lazy"
+              src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600" alt="Pão de queijo"></span><span
+            class="cat">Salgados</span>
+          <h3>Pão de queijo</h3><span class="meta"><span>50 min</span><span>20 unidades</span></span>
+        </a><a class="card" href="receitas/strogonoff.html"><span class="thumb"><img loading="lazy"
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"
+              alt="Strogonoff de frango"></span><span class="cat">Salgados</span>
+          <h3>Strogonoff de frango</h3><span class="meta"><span>40 min</span><span>4 porções</span></span>
+        </a></div>
+      <h2 class="sec">Receitas por categoria</h2>
+      <div class="cats"><a href="categorias/doces.html">Doces e sobremesas<span>4 receitas</span></a><a
+          href="categorias/salgados.html">Salgados<span>5 receitas</span></a><a href="categorias/rapidas.html">Receitas
+          rápidas<span>1 receitas</span></a><a href="categorias/vegetarianas.html">Vegetarianas<span>1
+            receitas</span></a><a href="categorias/acompanhamentos.html">Acompanhamentos<span>3 receitas</span></a>
       </div>
-    </section>
-    <section class="section" id="categorias">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="eyebrow">Encontre sua inspiração</div>
-            <h2>Explore por categoria</h2>
-            <p>Escolha o tipo de receita que combina com seu momento.</p>
-          </div>
-        </div>
-        <div class="category-grid">
-          <a class="category-card" href="#receitas"><span class="category-icon">🍰</span>
-            <h3>Doces e sobremesas</h3>
-            <p>Bolos, pudins e doces.</p>
-          </a>
-          <a class="category-card" href="#receitas"><span class="category-icon">🍝</span>
-            <h3>Salgados</h3>
-            <p>Pratos principais e lanches.</p>
-          </a>
-          <a class="category-card" href="#receitas"><span class="category-icon">⏱️</span>
-            <h3>Receitas rápidas</h3>
-            <p>Praticidade para a rotina.</p>
-          </a>
-          <a class="category-card" href="#receitas"><span class="category-icon">🥗</span>
-            <h3>Vegetarianas</h3>
-            <p>Opções sem carne.</p>
-          </a>
-          <a class="category-card" href="eventos.html#aniversarios"><span class="category-icon">🎂</span>
-            <h3>Aniversários</h3>
-            <p>Doces, salgados e bolos.</p>
-          </a>
-          <a class="category-card" href="eventos.html#natal"><span class="category-icon">🎄</span>
-            <h3>Natal</h3>
-            <p>Receitas para a ceia.</p>
-          </a>
-          <a class="category-card" href="eventos.html#eventos"><span class="category-icon">🥂</span>
-            <h3>Eventos especiais</h3>
-            <p>Reuniões e comemorações.</p>
-          </a>
-          <a class="category-card" href="eventos.html"><span class="category-icon">🍽️</span>
-            <h3>Almoços em família</h3>
-            <p>Pratos para compartilhar.</p>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="section section-soft" id="receitas">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="eyebrow">Escolhas da cozinha</div>
-            <h2>Receitas em destaque</h2>
-            <p>Ideias variadas para experimentar e compartilhar.</p>
-          </div><a class="text-link" href="eventos.html">Ver ideias para eventos →</a>
-        </div>
-        <div class="recipe-grid">
-          <article class="recipe-card"><img src="https://images.unsplash.com/photo-1574896830485-7c2d6f4c7c54?w=800"
-              alt="Lasanha à bolonhesa">
-            <div class="recipe-card-body">
-              <span class="recipe-tag">SALGADOS</span>
-              <h3>Lasanha à bolonhesa</h3>
-              <p>Camadas de massa, molho e queijo para compartilhar.</p>
-              <div class="recipe-meta"><span>◷ 45 min</span><span>♧ 6 porções</span></div>
-              <a class="card-link" href="receitas/lasanha.html">Ver receita completa →</a>
-            </div>
-          </article>
-          <article class="recipe-card"><img src="https://images.unsplash.com/photo-1581798459219-318e76aecc7b?w=800"
-              alt="Brigadeiro tradicional">
-            <div class="recipe-card-body">
-              <span class="recipe-tag">DOCES</span>
-              <h3>Brigadeiro tradicional</h3>
-              <p>O clássico das festas de aniversário brasileiras.</p>
-              <div class="recipe-meta"><span>◷ 25 min</span><span>♧ 25 unidades</span></div>
-              <a class="card-link" href="receitas/brigadeiro.html">Ver receita completa →</a>
-            </div>
-          </article>
-          <article class="recipe-card"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800"
-              alt="Salada colorida">
-            <div class="recipe-card-body">
-              <span class="recipe-tag">VEGETARIANAS</span>
-              <h3>Salada colorida</h3>
-              <p>Frescor e cor para acompanhar suas refeições.</p>
-              <div class="recipe-meta"><span>◷ 15 min</span><span>♧ 4 porções</span></div>
-              <a class="card-link" href="receitas/salada.html">Ver receita completa →</a>
-            </div>
-          </article>
-          <article class="recipe-card"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800"
-              alt="Pudim de leite">
-            <div class="recipe-card-body">
-              <span class="recipe-tag">DOCES</span>
-              <h3>Pudim de leite</h3>
-              <p>Uma sobremesa cremosa para ocasiões especiais.</p>
-              <div class="recipe-meta"><span>◷ 1h20</span><span>♧ 8 porções</span></div>
-              <a class="card-link" href="receitas/pudim.html">Ver receita completa →</a>
-            </div>
-          </article>
-          <article class="recipe-card"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=800"
-              alt="Farofa festiva">
-            <div class="recipe-card-body">
-              <span class="recipe-tag">ACOMPANHAMENTOS</span>
-              <h3>Farofa festiva</h3>
-              <p>Acompanhamento cheio de sabor para a ceia.</p>
-              <div class="recipe-meta"><span>◷ 25 min</span><span>♧ 6 porções</span></div>
-              <a class="card-link" href="receitas/farofa.html">Ver receita completa →</a>
-            </div>
-          </article>
-          <article class="recipe-card"><img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?w=800"
-              alt="Rabanada de Natal">
-            <div class="recipe-card-body">
-              <span class="recipe-tag">NATAL</span>
-              <h3>Rabanada de Natal</h3>
-              <p>Um clássico que não pode faltar na mesa natalina.</p>
-              <div class="recipe-meta"><span>◷ 35 min</span><span>♧ 10 unidades</span></div>
-              <a class="card-link" href="receitas/rabanada.html">Ver receita completa →</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container event-banner">
-        <div>
-          <div class="eyebrow" style="color:#f5c6a9">Ocasiões especiais</div>
-          <h2 style="font:700 2rem 'Playfair Display',Georgia,serif">Sua comemoração começa pelo cardápio.</h2>
-          <p>Encontre sugestões para aniversários, Natal, confraternizações e encontros em família. Organize entradas,
-            pratos principais, acompanhamentos e sobremesas.</p>
-        </div>
-        <a class="button" href="eventos.html">Explorar eventos →</a>
-      </div>
-    </section>
+      <section class="faixa">
+        <h2>Ceia de Natal</h2>
+        <p>Rabanada, farofa, salpicão e frango assado para montar a mesa. <a href="eventos.html#natal">Ver as receitas
+            de Natal</a></p>
+      </section>
+      <h2 class="sec">Mais receitas</h2>
+      <div class="grid"><a class="card" href="receitas/lasanha.html"><span class="thumb"><img loading="lazy"
+              src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=600"
+              alt="Lasanha à bolonhesa"></span><span class="cat">Salgados</span>
+          <h3>Lasanha à bolonhesa</h3><span class="meta"><span>45 min</span><span>6 porções</span></span>
+        </a><a class="card" href="receitas/brigadeiro.html"><span class="thumb"><img loading="lazy"
+              src="https://images.unsplash.com/photo-1581798459219-318e76aecc7b?w=600"
+              alt="Brigadeiro tradicional"></span><span class="cat">Doces e sobremesas</span>
+          <h3>Brigadeiro tradicional</h3><span class="meta"><span>25 min</span><span>25 unidades</span></span>
+        </a><a class="card" href="receitas/salada.html"><span class="thumb"><img loading="lazy"
+              src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600"
+              alt="Salada colorida"></span><span class="cat">Vegetarianas</span>
+          <h3>Salada colorida</h3><span class="meta"><span>15 min</span><span>4 porções</span></span>
+        </a><a class="card" href="receitas/pudim.html"><span class="thumb"><img loading="lazy"
+              src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600"
+              alt="Pudim de leite condensado"></span><span class="cat">Doces e sobremesas</span>
+          <h3>Pudim de leite condensado</h3><span class="meta"><span>1h20</span><span>8 porções</span></span>
+        </a></div>
+    </div>
   </main>
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand"><a class="logo" href="index.html" style="color:white"><span
-              class="logo-mark">✦</span>Gourmet<span>Eats</span></a>
-          <p>Receitas organizadas, ideias para comemorar e inspiração para transformar qualquer refeição em um momento
-            especial.</p>
-        </div>
-        <div>
-          <h3>Navegação</h3>
-          <ul class="footer-links">
-            <li><a href="index.html">Página inicial</a></li>
-            <li><a href="index.html#categorias">Categorias</a></li>
-            <li><a href="eventos.html">Eventos comemorativos</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Explore</h3>
-          <ul class="footer-links">
-            <li><a href="index.html#receitas">Receitas em destaque</a></li>
-            <li><a href="eventos.html#aniversarios">Aniversários</a></li>
-            <li><a href="eventos.html#natal">Natal e festas</a></li>
-          </ul>
-        </div>
+  <footer>
+    <div class="wrap">
+      <div><a class="logo" href="index.html">Gourmet<b>Eats</b></a>
+        <p>Receitas caseiras, sem complicação.</p>
       </div>
-      <div class="copyright">© 2026 GourmetEats. Projeto demonstrativo de receitas culinárias.</div>
+      <ul>
+        <li><a href="receitas.html">Todas as receitas</a></li>
+        <li><a href="eventos.html">Eventos e festas</a></li>
+        <li><a href="sobre.html">Sobre o site</a></li>
+      </ul>
+      <ul>
+        <li><a href="categorias/doces.html">Doces e sobremesas</a></li>
+        <li><a href="categorias/salgados.html">Salgados</a></li>
+        <li><a href="categorias/rapidas.html">Receitas rápidas</a></li>
+        <li><a href="categorias/vegetarianas.html">Vegetarianas</a></li>
+        <li><a href="categorias/acompanhamentos.html">Acompanhamentos</a></li>
+      </ul>
+      <div class="fim">© 2026 GourmetEats</div>
     </div>
   </footer>
 </body>
