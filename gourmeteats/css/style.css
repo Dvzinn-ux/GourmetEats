@@ -1,12 +1,13 @@
 :root {
-    --red: #c62f2a;
-    --red-d: #9f221d;
-    --green: #2f5d3a;
-    --bg: #f3f4f0;
-    --ink: #222;
-    --muted: #666;
-    --line: #dcdcd4;
-    --note: #e8f1e3
+    --red: #ce2b37;
+    --red-d: #a21f2b;
+    --green: #1f6b3a;
+    --bg: #fbf6ea;
+    --ink: #2b2118;
+    --muted: #6b5f52;
+    --line: #e3d8c3;
+    --note: #e6f0dc;
+    --bg-gradient: linear-gradient(90deg, #9fd3ae 0%, #fbf6ea 50%, #f2a6a0 100%)
 }
 
 * {
@@ -24,7 +25,11 @@ html {
 }
 
 body {
-    background: var(--bg);
+    background-color: var(--bg);
+    background-image: var(--bg-gradient);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
     color: var(--ink);
     font: 17px/1.6 "Segoe UI", "Helvetica Neue", Arial, sans-serif
 }
@@ -42,6 +47,7 @@ h1,
 h2,
 h3,
 .logo {
+    font-family: Georgia, "Palatino Linotype", Palatino, "Times New Roman", serif;
     line-height: 1.25;
     font-weight: 700
 }
@@ -96,7 +102,9 @@ h3,
 }
 
 .catbar {
-    background: var(--red)
+    background: var(--red);
+    border-bottom: 5px solid;
+    border-image: linear-gradient(90deg, #008c45 0 33.33%, #f4f5f0 33.33% 66.66%, #cd212a 66.66% 100%) 1
 }
 
 .catbar .wrap {
@@ -575,4 +583,16 @@ footer li {
         color: var(--red);
         text-decoration: underline
     }
+}
+
+.topbar .logo::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: -2px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #009246 0 33.33%, #fff 33.33% 66.66%, #ce2b37 66.66% 100%);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .18)
 }
