@@ -596,3 +596,86 @@ footer li {
     background: linear-gradient(90deg, #009246 0 33.33%, #fff 33.33% 66.66%, #ce2b37 66.66% 100%);
     box-shadow: 0 0 0 1px rgba(0, 0, 0, .18)
 }
+
+/* ===== Funcionalidades extras ===== */
+
+.sr {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap
+}
+
+/* Barra de botões dos ingredientes */
+.ing-acoes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 12px
+}
+
+.btn-sec {
+    background: #fff;
+    color: var(--ink);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 8px 14px;
+    font: inherit;
+    font-size: .92rem;
+    cursor: pointer
+}
+
+.btn-sec:hover {
+    border-color: var(--red);
+    color: var(--red)
+}
+
+.ing-aviso {
+    font-size: .88rem;
+    color: var(--green);
+    font-weight: 600
+}
+
+/* Busca */
+.busca {
+    margin: 0 0 24px;
+    max-width: 520px
+}
+
+.busca input {
+    width: 100%;
+    background: #fff;
+    color: var(--ink);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 11px 14px;
+    font: inherit
+}
+
+.busca input:focus {
+    border-color: var(--green)
+}
+
+.busca-info {
+    font-size: .85rem;
+    color: var(--muted);
+    margin-top: 6px
+}
+
+.busca-vazio {
+    margin-top: 10px;
+    padding: 12px 14px;
+    background: #fff;
+    border-left: 4px solid var(--red)
+}
+
+@media print {
+
+    .ing-acoes,
+    .busca {
+        display: none
+    }
+}
