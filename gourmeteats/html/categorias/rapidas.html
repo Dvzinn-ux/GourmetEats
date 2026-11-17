@@ -7,6 +7,13 @@
     <meta name="description" content="Para os dias em que o tempo está curto.">
     <title>Receitas rápidas | GourmetEats</title>
     <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,10 +24,10 @@
                 class="menu-close" aria-label="Fechar menu">&times;</label></div>
         <a class="l" href="../index.html">Início</a>
         <a class="l" href="../receitas.html">Todas as receitas</a>
-        <h4>Categorias</h4><a class="l" href="../categorias/doces.html">Doces e sobremesas</a><a class="l"
-            href="../categorias/salgados.html">Salgados</a><a class="l" href="../categorias/rapidas.html">Receitas
-            rápidas</a><a class="l" href="../categorias/vegetarianas.html">Vegetarianas</a><a class="l"
-            href="../categorias/acompanhamentos.html">Acompanhamentos</a>
+        <h4>Categorias</h4><a class="l" href="doces.html">Doces e sobremesas</a><a class="l"
+            href="salgados.html">Salgados</a><a class="l" href="rapidas.html">Receitas
+            rápidas</a><a class="l" href="vegetarianas.html">Vegetarianas</a><a class="l"
+            href="acompanhamentos.html">Acompanhamentos</a>
         <h4>Ocasiões</h4><a class="l" href="../eventos.html#aniversario">Aniversários</a><a class="l"
             href="../eventos.html#natal">Natal e fim de ano</a><a class="l" href="../eventos.html#encontros">Almoços e
             encontros em família</a>
@@ -35,24 +42,47 @@
             </div>
         </div>
         <nav class="catbar">
-            <div class="wrap"><a href="../categorias/doces.html">Doces e sobremesas</a><a
-                    href="../categorias/salgados.html">Salgados</a><a class=on
-                    href="../categorias/rapidas.html">Receitas rápidas</a><a
-                    href="../categorias/vegetarianas.html">Vegetarianas</a><a
-                    href="../categorias/acompanhamentos.html">Acompanhamentos</a><a href="../eventos.html">Eventos e
+            <div class="wrap"><a href="doces.html">Doces e sobremesas</a><a
+                    href="salgados.html">Salgados</a><a href="rapidas.html" class="ativo">Receitas
+                    rápidas</a><a href="vegetarianas.html">Vegetarianas</a><a
+                    href="acompanhamentos.html">Acompanhamentos</a><a href="../eventos.html">Eventos e
                     festas</a></div>
         </nav>
     </header>
     <main>
         <div class="wrap">
             <div class="crumb"><a href="../index.html">Início</a> / Receitas rápidas</div>
-            <h1 class="titulo">Receitas rápidas</h1>
+            <h1>Receitas rápidas</h1>
             <p class="sub">Para os dias em que o tempo está curto.</p>
-            <div class="grid"><a class="card" href="../receitas/panquecas.html"><span class="thumb"><img loading="lazy"
-                            src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=600"
-                            alt="Panquecas rápidas"></span><span class="cat">Receitas rápidas</span>
-                    <h3>Panquecas rápidas</h3><span class="meta"><span>20 min</span><span>6 unidades</span></span>
-                </a></div>
+            
+            <div class="grid">
+                <a class="card" href="../receitas/panquecas.html">
+                    <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=800" alt="Panquecas rápidas">
+                    <div class="txt">
+                        <span class="tag">Receitas rápidas</span>
+                        <h3>Panquecas rápidas</h3>
+                        <p class="meta">20 min &nbsp; 6 unidades</p>
+                    </div>
+                </a>
+
+                <a class="card" href="../receitas/omelete-ervas.html">
+                    <img src="https://images.unsplash.com/photo-1510693206972-df098062cb71?w=800" alt="Omelete de ervas finas">
+                    <div class="txt">
+                        <span class="tag">Receitas rápidas</span>
+                        <h3>Omelete de ervas finas</h3>
+                        <p class="meta">10 min &nbsp; 1 porção</p>
+                    </div>
+                </a>
+
+                <a class="card" href="../receitas/bruschetta-copa-brie.html">
+                    <img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=800" alt="Bruschetta de Copa com Queijo Brie e Mel">
+                    <div class="txt">
+                        <span class="tag">Receitas rápidas</span>
+                        <h3>Bruschetta de Copa com Queijo Brie e Mel</h3>
+                        <p class="meta">15 min &nbsp; 4 porções</p>
+                    </div>
+                </a>
+            </div>
         </div>
     </main>
     <footer>
@@ -66,11 +96,11 @@
                 <li><a href="../sobre.html">Sobre o site</a></li>
             </ul>
             <ul>
-                <li><a href="../categorias/doces.html">Doces e sobremesas</a></li>
-                <li><a href="../categorias/salgados.html">Salgados</a></li>
-                <li><a href="../categorias/rapidas.html">Receitas rápidas</a></li>
-                <li><a href="../categorias/vegetarianas.html">Vegetarianas</a></li>
-                <li><a href="../categorias/acompanhamentos.html">Acompanhamentos</a></li>
+                <li><a href="doces.html">Doces e sobremesas</a></li>
+                <li><a href="salgados.html">Salgados</a></li>
+                <li><a href="rapidas.html">Receitas rápidas</a></li>
+                <li><a href="vegetarianas.html">Vegetarianas</a></li>
+                <li><a href="acompanhamentos.html">Acompanhamentos</a></li>
             </ul>
             <div class="fim">© 2026 GourmetEats</div>
         </div>

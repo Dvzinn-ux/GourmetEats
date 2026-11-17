@@ -4,9 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bolos, pudins e docinhos para fechar a refeição ou enfeitar a mesa de festa.">
+    <meta name="description" content="Doces e sobremesas.">
     <title>Doces e sobremesas | GourmetEats</title>
     <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,10 +25,10 @@
                 class="menu-close" aria-label="Fechar menu">&times;</label></div>
         <a class="l" href="../index.html">Início</a>
         <a class="l" href="../receitas.html">Todas as receitas</a>
-        <h4>Categorias</h4><a class="l" href="../categorias/doces.html">Doces e sobremesas</a><a class="l"
-            href="../categorias/salgados.html">Salgados</a><a class="l" href="../categorias/rapidas.html">Receitas
-            rápidas</a><a class="l" href="../categorias/vegetarianas.html">Vegetarianas</a><a class="l"
-            href="../categorias/acompanhamentos.html">Acompanhamentos</a>
+        <h4>Categorias</h4><a class="l" href="doces.html">Doces e sobremesas</a><a class="l"
+            href="salgados.html">Salgados</a><a class="l" href="rapidas.html">Receitas
+            rápidas</a><a class="l" href="vegetarianas.html">Vegetarianas</a><a class="l"
+            href="acompanhamentos.html">Acompanhamentos</a>
         <h4>Ocasiões</h4><a class="l" href="../eventos.html#aniversario">Aniversários</a><a class="l"
             href="../eventos.html#natal">Natal e fim de ano</a><a class="l" href="../eventos.html#encontros">Almoços e
             encontros em família</a>
@@ -35,37 +43,66 @@
             </div>
         </div>
         <nav class="catbar">
-            <div class="wrap"><a class=on href="../categorias/doces.html">Doces e sobremesas</a><a
-                    href="../categorias/salgados.html">Salgados</a><a href="../categorias/rapidas.html">Receitas
-                    rápidas</a><a href="../categorias/vegetarianas.html">Vegetarianas</a><a
-                    href="../categorias/acompanhamentos.html">Acompanhamentos</a><a href="../eventos.html">Eventos e
+            <div class="wrap"><a href="doces.html" class="ativo">Doces e sobremesas</a><a
+                    href="salgados.html">Salgados</a><a href="rapidas.html">Receitas
+                    rápidas</a><a href="vegetarianas.html">Vegetarianas</a><a
+                    href="acompanhamentos.html">Acompanhamentos</a><a href="../eventos.html">Eventos e
                     festas</a></div>
         </nav>
     </header>
     <main>
         <div class="wrap">
             <div class="crumb"><a href="../index.html">Início</a> / Doces e sobremesas</div>
-            <h1 class="titulo">Doces e sobremesas</h1>
-            <p class="sub">Bolos, pudins e docinhos para fechar a refeição ou enfeitar a mesa de festa.</p>
-            <div class="grid"><a class="card" href="../receitas/bolo-de-cenoura.html"><span class="thumb"><img
-                            loading="lazy" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600"
-                            alt="Bolo de cenoura com cobertura de chocolate"></span><span class="cat">Doces e
-                        sobremesas</span>
-                    <h3>Bolo de cenoura com cobertura de chocolate</h3><span class="meta"><span>1h</span><span>12
-                            porções</span></span>
-                </a><a class="card" href="../receitas/brigadeiro.html"><span class="thumb"><img loading="lazy"
-                            src="../../img/brigadeiro.webp" alt="Brigadeiro tradicional"></span><span class="cat">Doces
-                        e sobremesas</span>
-                    <h3>Brigadeiro tradicional</h3><span class="meta"><span>25 min</span><span>25 unidades</span></span>
-                </a><a class="card" href="../receitas/pudim.html"><span class="thumb"><img loading="lazy"
-                            src="../../img/pudim.webp" alt="Pudim de leite condensado"></span><span class="cat">Doces e
-                        sobremesas</span>
-                    <h3>Pudim de leite condensado</h3><span class="meta"><span>1h20</span><span>8 porções</span></span>
-                </a><a class="card" href="../receitas/rabanada.html"><span class="thumb"><img loading="lazy"
-                            src="../../img/rabanada.webp" alt="Rabanada de Natal"></span><span class="cat">Doces e
-                        sobremesas</span>
-                    <h3>Rabanada de Natal</h3><span class="meta"><span>35 min</span><span>10 unidades</span></span>
-                </a></div>
+            <h1>Doces e sobremesas</h1>
+            <p class="sub">Para adoçar o dia a dia e as ocasiões especiais.</p>
+            
+            <div class="grid">
+                <!-- Se a foto do bolo for .webp ou .jpg, ajuste a extensão abaixo se necessário -->
+                <a class="card" href="../receitas/bolo-de-cenoura.html">
+                    <img src="../../img/bolo-de-cenoura.jpg" alt="Bolo de cenoura">
+                    <div class="txt">
+                        <span class="tag">Doces e sobremesas</span>
+                        <h3>Bolo de cenoura</h3>
+                        <p class="meta">45 min &nbsp; 8 fatias</p>
+                    </div>
+                </a>
+
+                <a class="card" href="../receitas/brigadeiro.html">
+                    <img src="../../img/brigadeiro.webp" alt="Brigadeiro">
+                    <div class="txt">
+                        <span class="tag">Doces e sobremesas</span>
+                        <h3>Brigadeiro</h3>
+                        <p class="meta">20 min &nbsp; 20 unidades</p>
+                    </div>
+                </a>
+
+                <a class="card" href="../receitas/pudim.html">
+                    <img src="../../img/pudim.webp" alt="Pudim de leite condensado">
+                    <div class="txt">
+                        <span class="tag">Doces e sobremesas</span>
+                        <h3>Pudim de leite condensado</h3>
+                        <p class="meta">60 min &nbsp; 8 fatias</p>
+                    </div>
+                </a>
+
+                <a class="card" href="../receitas/rabanada.html">
+                    <img src="../../img/rabanada.webp" alt="Rabanada tradicional">
+                    <div class="txt">
+                        <span class="tag">Doces e sobremesas</span>
+                        <h3>Rabanada tradicional</h3>
+                        <p class="meta">25 min &nbsp; 6 porções</p>
+                    </div>
+                </a>
+
+                <a class="card" href="../receitas/pave-ouro-branco.html">
+                    <img src="../../img/pave-ouro-branco.webp" alt="Pavê de Ouro Branco">
+                    <div class="txt">
+                        <span class="tag">Doces e sobremesas</span>
+                        <h3>Pavê de Ouro Branco</h3>
+                        <p class="meta">40 min &nbsp; 8 porções</p>
+                    </div>
+                </a>
+            </div>
         </div>
     </main>
     <footer>
@@ -79,11 +116,11 @@
                 <li><a href="../sobre.html">Sobre o site</a></li>
             </ul>
             <ul>
-                <li><a href="../categorias/doces.html">Doces e sobremesas</a></li>
-                <li><a href="../categorias/salgados.html">Salgados</a></li>
-                <li><a href="../categorias/rapidas.html">Receitas rápidas</a></li>
-                <li><a href="../categorias/vegetarianas.html">Vegetarianas</a></li>
-                <li><a href="../categorias/acompanhamentos.html">Acompanhamentos</a></li>
+                <li><a href="doces.html">Doces e sobremesas</a></li>
+                <li><a href="salgados.html">Salgados</a></li>
+                <li><a href="rapidas.html">Receitas rápidas</a></li>
+                <li><a href="vegetarianas.html">Vegetarianas</a></li>
+                <li><a href="acompanhamentos.html">Acompanhamentos</a></li>
             </ul>
             <div class="fim">© 2026 GourmetEats</div>
         </div>
