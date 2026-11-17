@@ -7,6 +7,19 @@
     <meta name="description" content="Para completar o prato.">
     <title>Acompanhamentos | GourmetEats</title>
     <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,10 +30,10 @@
                 class="menu-close" aria-label="Fechar menu">&times;</label></div>
         <a class="l" href="../index.html">Início</a>
         <a class="l" href="../receitas.html">Todas as receitas</a>
-        <h4>Categorias</h4><a class="l" href="../categorias/doces.html">Doces e sobremesas</a><a class="l"
-            href="../categorias/salgados.html">Salgados</a><a class="l" href="../categorias/rapidas.html">Receitas
-            rápidas</a><a class="l" href="../categorias/vegetarianas.html">Vegetarianas</a><a class="l"
-            href="../categorias/acompanhamentos.html">Acompanhamentos</a>
+        <h4>Categorias</h4><a class="l" href="doces.html">Doces e sobremesas</a><a class="l"
+            href="salgados.html">Salgados</a><a class="l" href="rapidas.html">Receitas
+            rápidas</a><a class="l" href="vegetarianas.html">Vegetarianas</a><a class="l"
+            href="acompanhamentos.html">Acompanhamentos</a>
         <h4>Ocasiões</h4><a class="l" href="../eventos.html#aniversario">Aniversários</a><a class="l"
             href="../eventos.html#natal">Natal e fim de ano</a><a class="l" href="../eventos.html#encontros">Almoços e
             encontros em família</a>
@@ -35,31 +48,56 @@
             </div>
         </div>
         <nav class="catbar">
-            <div class="wrap"><a href="../categorias/doces.html">Doces e sobremesas</a><a
-                    href="../categorias/salgados.html">Salgados</a><a href="../categorias/rapidas.html">Receitas
-                    rápidas</a><a href="../categorias/vegetarianas.html">Vegetarianas</a><a class=on
-                    href="../categorias/acompanhamentos.html">Acompanhamentos</a><a href="../eventos.html">Eventos e
+            <div class="wrap"><a href="doces.html">Doces e sobremesas</a><a
+                    href="salgados.html">Salgados</a><a href="rapidas.html">Receitas
+                    rápidas</a><a href="vegetarianas.html">Vegetarianas</a><a
+                    href="acompanhamentos.html" class="ativo">Acompanhamentos</a><a href="../eventos.html">Eventos e
                     festas</a></div>
         </nav>
     </header>
     <main>
         <div class="wrap">
             <div class="crumb"><a href="../index.html">Início</a> / Acompanhamentos</div>
-            <h1 class="titulo">Acompanhamentos</h1>
+            <h1>Acompanhamentos</h1>
             <p class="sub">Para completar o prato.</p>
-            <div class="grid"><a class="card" href="../receitas/salpicao.html"><span class="thumb"><img loading="lazy"
-                            src="../../img/salpicao.webp" alt="Salpicão de frango"></span><span
-                        class="cat">Salgados</span>
-                    <h3>Salpicão de frango</h3><span class="meta"><span>30 min</span><span>8 porções</span></span>
-                </a><a class="card" href="../receitas/salada.html"><span class="thumb"><img loading="lazy"
-                            src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600"
-                            alt="Salada colorida"></span><span class="cat">Vegetarianas</span>
-                    <h3>Salada colorida</h3><span class="meta"><span>15 min</span><span>4 porções</span></span>
-                </a><a class="card" href="../receitas/farofa.html"><span class="thumb"><img loading="lazy"
-                            src="../../img/farofa.webp" alt="Farofa festiva"></span><span
-                        class="cat">Acompanhamentos</span>
-                    <h3>Farofa festiva</h3><span class="meta"><span>25 min</span><span>6 porções</span></span>
-                </a></div>
+            
+            <div class="grid">
+                <a class="card" href="../receitas/salpicao.html">
+                    <img src="../../img/salpicao.webp" alt="Salpicão de frango">
+                    <div class="txt">
+                        <span class="tag">Salgados</span>
+                        <h3>Salpicão de frango</h3>
+                        <p class="meta">30 min &nbsp; 8 porções</p>
+                    </div>
+                </a>
+
+                <a class="card" href="../receitas/salada.html">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800" alt="Salada colorida">
+                    <div class="txt">
+                        <span class="tag">Vegetarianas</span>
+                        <h3>Salada colorida</h3>
+                        <p class="meta">15 min &nbsp; 4 porções</p>
+                    </div>
+                </a>
+
+                <a class="card" href="../receitas/farofa.html">
+                    <img src="../../img/farofa.webp" alt="Farofa festiva">
+                    <div class="txt">
+                        <span class="tag">Acompanhamentos</span>
+                        <h3>Farofa festiva</h3>
+                        <p class="meta">25 min &nbsp; 6 porções</p>
+                    </div>
+                </a>
+
+                <a class="card" href="../receitas/arroz-grega.html">
+                    <img src="../../img/arroz-grega.jpg" alt="Arroz à Grega">
+                    <div class="txt">
+                        <span class="tag">Acompanhamentos</span>
+                        <h3>Arroz à Grega</h3>
+                        <p class="meta">25 min &nbsp; 6 porções</p>
+                    </div>
+                </a>
+            </div>
         </div>
     </main>
     <footer>
@@ -73,15 +111,15 @@
                 <li><a href="../sobre.html">Sobre o site</a></li>
             </ul>
             <ul>
-                <li><a href="../categorias/doces.html">Doces e sobremesas</a></li>
-                <li><a href="../categorias/salgados.html">Salgados</a></li>
-                <li><a href="../categorias/rapidas.html">Receitas rápidas</a></li>
-                <li><a href="../categorias/vegetarianas.html">Vegetarianas</a></li>
-                <li><a href="../categorias/acompanhamentos.html">Acompanhamentos</a></li>
+                <li><a href="doces.html">Doces e sobremesas</a></li>
+                <li><a href="salgados.html">Salgados</a></li>
+                <li><a href="rapidas.html">Receitas rápidas</a></li>
+                <li><a href="vegetarianas.html">Vegetarianas</a></li>
+                <li><a href="acompanhamentos.html">Acompanhamentos</a></li>
             </ul>
             <div class="fim">© 2026 GourmetEats</div>
         </div>
     </footer>
 </body>
 
-</html>
+</html> 

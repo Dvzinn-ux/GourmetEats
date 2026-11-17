@@ -7,6 +7,19 @@
     <meta name="description" content="Pratos principais e lanches para o almoço, o jantar ou o café da tarde.">
     <title>Salgados | GourmetEats</title>
     <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,10 +30,10 @@
                 class="menu-close" aria-label="Fechar menu">&times;</label></div>
         <a class="l" href="../index.html">Início</a>
         <a class="l" href="../receitas.html">Todas as receitas</a>
-        <h4>Categorias</h4><a class="l" href="../categorias/doces.html">Doces e sobremesas</a><a class="l"
-            href="../categorias/salgados.html">Salgados</a><a class="l" href="../categorias/rapidas.html">Receitas
-            rápidas</a><a class="l" href="../categorias/vegetarianas.html">Vegetarianas</a><a class="l"
-            href="../categorias/acompanhamentos.html">Acompanhamentos</a>
+        <h4>Categorias</h4><a class="l" href="doces.html">Doces e sobremesas</a><a class="l"
+            href="salgados.html">Salgados</a><a class="l" href="rapidas.html">Receitas
+            rápidas</a><a class="l" href="vegetarianas.html">Vegetarianas</a><a class="l"
+            href="acompanhamentos.html">Acompanhamentos</a>
         <h4>Ocasiões</h4><a class="l" href="../eventos.html#aniversario">Aniversários</a><a class="l"
             href="../eventos.html#natal">Natal e fim de ano</a><a class="l" href="../eventos.html#encontros">Almoços e
             encontros em família</a>
@@ -35,39 +48,92 @@
             </div>
         </div>
         <nav class="catbar">
-            <div class="wrap"><a href="../categorias/doces.html">Doces e sobremesas</a><a class=on
-                    href="../categorias/salgados.html">Salgados</a><a href="../categorias/rapidas.html">Receitas
-                    rápidas</a><a href="../categorias/vegetarianas.html">Vegetarianas</a><a
-                    href="../categorias/acompanhamentos.html">Acompanhamentos</a><a href="../eventos.html">Eventos e
+            <div class="wrap"><a href="doces.html">Doces e sobremesas</a><a
+                    href="salgados.html" class="ativo">Salgados</a><a href="rapidas.html">Receitas
+                    rápidas</a><a href="vegetarianas.html">Vegetarianas</a><a
+                    href="acompanhamentos.html">Acompanhamentos</a><a href="../eventos.html">Eventos e
                     festas</a></div>
         </nav>
     </header>
     <main>
         <div class="wrap">
             <div class="crumb"><a href="../index.html">Início</a> / Salgados</div>
-            <h1 class="titulo">Salgados</h1>
+            <h1>Salgados</h1>
             <p class="sub">Pratos principais e lanches para o almoço, o jantar ou o café da tarde.</p>
-            <div class="grid"><a class="card" href="../receitas/salpicao.html"><span class="thumb"><img loading="lazy"
-                            src="../../img/salpicao.webp" alt="Salpicão de frango"></span><span
-                        class="cat">Salgados</span>
-                    <h3>Salpicão de frango</h3><span class="meta"><span>30 min</span><span>8 porções</span></span>
-                </a><a class="card" href="../receitas/pao-de-queijo.html"><span class="thumb"><img loading="lazy"
-                            src="../../img/pao-de-queijo.webp" alt="Pão de queijo"></span><span
-                        class="cat">Salgados</span>
-                    <h3>Pão de queijo</h3><span class="meta"><span>50 min</span><span>20 unidades</span></span>
-                </a><a class="card" href="../receitas/strogonoff.html"><span class="thumb"><img loading="lazy"
-                            src="../../img/strogonoff.webp" alt="Strogonoff de frango"></span><span
-                        class="cat">Salgados</span>
-                    <h3>Strogonoff de frango</h3><span class="meta"><span>40 min</span><span>4 porções</span></span>
-                </a><a class="card" href="../receitas/lasanha.html"><span class="thumb"><img loading="lazy"
-                            src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=600"
-                            alt="Lasanha à bolonhesa"></span><span class="cat">Salgados</span>
-                    <h3>Lasanha à bolonhesa</h3><span class="meta"><span>45 min</span><span>6 porções</span></span>
-                </a><a class="card" href="../receitas/frango.html"><span class="thumb"><img loading="lazy"
-                            src="../../img/frango.webp" alt="Frango assado especial"></span><span
-                        class="cat">Salgados</span>
-                    <h3>Frango assado especial</h3><span class="meta"><span>1h30</span><span>6 porções</span></span>
-                </a></div>
+            
+            <div class="grid">
+                <a class="card" href="../receitas/salpicao.html">
+                    <img src="../../img/salpicao.webp" alt="Salpicão de frango">
+                    <div class="txt">
+                        <span class="tag">Salgados</span>
+                        <h3>Salpicão de frango</h3>
+                        <p class="meta">30 min &nbsp; 8 porções</p>
+                    </div>
+                </a>
+
+                <a class="card" href="../receitas/pao-de-queijo.html">
+                    <img src="../../img/pao-de-queijo.webp" alt="Pão de queijo">
+                    <div class="txt">
+                        <span class="tag">Salgados</span>
+                        <h3>Pão de queijo</h3>
+                        <p class="meta">50 min &nbsp; 20 unidades</p>
+                    </div>
+                </a>
+
+                <a class="card" href="../receitas/strogonoff.html">
+                    <img src="../../img/strogonoff.webp" alt="Strogonoff de frango">
+                    <div class="txt">
+                        <span class="tag">Salgados</span>
+                        <h3>Strogonoff de frango</h3>
+                        <p class="meta">40 min &nbsp; 4 porções</p>
+                    </div>
+                </a>
+
+                <a class="card" href="../receitas/lasanha.html">
+                    <img src="../../img/lasanha.jpg" alt="Lasanha à bolonhesa">
+                    <div class="txt">
+                        <span class="tag">Salgados</span>
+                        <h3>Lasanha à bolonhesa</h3>
+                        <p class="meta">45 min &nbsp; 6 porções</p>
+                    </div>
+                </a>
+
+                <a class="card" href="../receitas/frango.html">
+                    <img src="../../img/frango.webp" alt="Frango assado especial">
+                    <div class="txt">
+                        <span class="tag">Salgados</span>
+                        <h3>Frango assado especial</h3>
+                        <p class="meta">1h30 &nbsp; 6 porções</p>
+                    </div>
+                </a>
+
+                <a class="card" href="../receitas/empadao-frango.html">
+                    <img src="../../img/empadao-frango.jpg" alt="Empadão de Frango">
+                    <div class="txt">
+                        <span class="tag">Salgados</span>
+                        <h3>Empadão de Frango</h3>
+                        <p class="meta">60 min &nbsp; 8 fatias</p>
+                    </div>
+                </a>
+
+                <a class="card" href="../receitas/coxinha.html">
+                    <img src="../../img/coxinha.jpg" alt="Coxinha de Frango com Catupiry">
+                    <div class="txt">
+                        <span class="tag">Salgados</span>
+                        <h3>Coxinha de Frango com Catupiry</h3>
+                        <p class="meta">60 min &nbsp; 20 unidades</p>
+                    </div>
+                </a>
+
+                <a class="card" href="../receitas/escondidinho.html">
+                    <img src="../../img/escondidinho.jpg" alt="Escondidinho de Carne Seca">
+                    <div class="txt">
+                        <span class="tag">Salgados</span>
+                        <h3>Escondidinho de Carne Seca</h3>
+                        <p class="meta">50 min &nbsp; 6 porções</p>
+                    </div>
+                </a>
+            </div>
         </div>
     </main>
     <footer>
@@ -81,11 +147,11 @@
                 <li><a href="../sobre.html">Sobre o site</a></li>
             </ul>
             <ul>
-                <li><a href="../categorias/doces.html">Doces e sobremesas</a></li>
-                <li><a href="../categorias/salgados.html">Salgados</a></li>
-                <li><a href="../categorias/rapidas.html">Receitas rápidas</a></li>
-                <li><a href="../categorias/vegetarianas.html">Vegetarianas</a></li>
-                <li><a href="../categorias/acompanhamentos.html">Acompanhamentos</a></li>
+                <li><a href="doces.html">Doces e sobremesas</a></li>
+                <li><a href="salgados.html">Salgados</a></li>
+                <li><a href="rapidas.html">Receitas rápidas</a></li>
+                <li><a href="vegetarianas.html">Vegetarianas</a></li>
+                <li><a href="acompanhamentos.html">Acompanhamentos</a></li>
             </ul>
             <div class="fim">© 2026 GourmetEats</div>
         </div>
